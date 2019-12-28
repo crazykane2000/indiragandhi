@@ -1,0 +1,337 @@
+[01-Dec-2018 15:43:54 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/priyanka765/public_html/principle9.com.au/backend/login_redirect.php on line 64
+[04-Dec-2018 09:57:00 UTC] PHP Notice:  Undefined variable: user in /home/priyanka765/public_html/principle9.com.au/backend/pdo_class_data.php on line 30
+[04-Dec-2018 09:57:00 UTC] PHP Notice:  Undefined variable: stmt in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 249
+[04-Dec-2018 09:57:00 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php:249
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/includes/topbar.php(49): count_notification('notification', NULL)
+#1 /home/priyanka765/public_html/principle9.com.au/backend/includes/header_end.php(19): require('/home/priyanka7...')
+#2 /home/priyanka765/public_html/principle9.com.au/backend/view_property.php(8): require('/home/priyanka7...')
+#3 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 249
+[04-Dec-2018 11:38:04 UTC] PHP Notice:  Undefined variable: user in /home/priyanka765/public_html/principle9.com.au/backend/pdo_class_data.php on line 30
+[04-Dec-2018 11:38:04 UTC] PHP Notice:  Undefined variable: stmt in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 249
+[04-Dec-2018 11:38:04 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php:249
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/includes/topbar.php(49): count_notification('notification', NULL)
+#1 /home/priyanka765/public_html/principle9.com.au/backend/includes/header_end.php(19): require('/home/priyanka7...')
+#2 /home/priyanka765/public_html/principle9.com.au/backend/add_popups.php(12): require('/home/priyanka7...')
+#3 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 249
+[05-Dec-2018 10:16:51 UTC] PHP Notice:  Undefined variable: user in /home/priyanka765/public_html/principle9.com.au/backend/pdo_class_data.php on line 30
+[05-Dec-2018 10:16:51 UTC] PHP Notice:  Undefined variable: stmt in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 249
+[05-Dec-2018 10:16:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php:249
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/includes/topbar.php(49): count_notification('notification', NULL)
+#1 /home/priyanka765/public_html/principle9.com.au/backend/includes/header_end.php(19): require('/home/priyanka7...')
+#2 /home/priyanka765/public_html/principle9.com.au/backend/view_property_category.php(4): require('/home/priyanka7...')
+#3 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 249
+[05-Dec-2018 11:14:54 UTC] PHP Notice:  Undefined variable: user in /home/priyanka765/public_html/principle9.com.au/backend/pdo_class_data.php on line 30
+[05-Dec-2018 11:14:54 UTC] PHP Notice:  Undefined variable: stmt in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 249
+[05-Dec-2018 11:14:54 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php:249
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/includes/topbar.php(49): count_notification('notification', NULL)
+#1 /home/priyanka765/public_html/principle9.com.au/backend/includes/header_end.php(19): require('/home/priyanka7...')
+#2 /home/priyanka765/public_html/principle9.com.au/backend/update_property.php(52): require('/home/priyanka7...')
+#3 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 249
+[06-Dec-2018 08:05:41 UTC] PHP Notice:  Undefined variable: user in /home/priyanka765/public_html/principle9.com.au/backend/pdo_class_data.php on line 30
+[06-Dec-2018 08:05:41 UTC] PHP Notice:  Undefined variable: stmt in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 249
+[06-Dec-2018 08:05:41 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php:249
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/includes/topbar.php(49): count_notification('notification', NULL)
+#1 /home/priyanka765/public_html/principle9.com.au/backend/includes/header_end.php(19): require('/home/priyanka7...')
+#2 /home/priyanka765/public_html/principle9.com.au/backend/view_property.php(8): require('/home/priyanka7...')
+#3 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 249
+[06-Dec-2018 08:37:26 UTC] PHP Notice:  Undefined index: floor_plan in /home/priyanka765/public_html/principle9.com.au/backend/property_handle.php on line 99
+[06-Dec-2018 08:37:26 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'video_link' in 'field list' in /home/priyanka765/public_html/principle9.com.au/backend/property_handle.php:103
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/property_handle.php(103): PDO->exec('INSERT INTO `pr...')
+#1 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/property_handle.php on line 103
+[06-Dec-2018 08:38:37 UTC] PHP Notice:  Undefined index: floor_plan in /home/priyanka765/public_html/principle9.com.au/backend/property_handle.php on line 99
+[06-Dec-2018 08:38:37 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'video_link' in 'field list' in /home/priyanka765/public_html/principle9.com.au/backend/property_handle.php:103
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/property_handle.php(103): PDO->exec('INSERT INTO `pr...')
+#1 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/property_handle.php on line 103
+[06-Dec-2018 08:47:09 UTC] PHP Notice:  Undefined index: floor_plan in /home/priyanka765/public_html/principle9.com.au/backend/property_handle.php on line 99
+[06-Dec-2018 08:47:09 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'video_link' in 'field list' in /home/priyanka765/public_html/principle9.com.au/backend/property_handle.php:103
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/property_handle.php(103): PDO->exec('INSERT INTO `pr...')
+#1 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/property_handle.php on line 103
+[06-Dec-2018 10:05:14 UTC] PHP Notice:  Undefined variable: user in /home/priyanka765/public_html/principle9.com.au/backend/pdo_class_data.php on line 30
+[06-Dec-2018 10:05:18 UTC] PHP Notice:  Undefined index: floor_plan in /home/priyanka765/public_html/principle9.com.au/backend/property_handle.php on line 99
+[06-Dec-2018 10:05:18 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'video_link' in 'field list' in /home/priyanka765/public_html/principle9.com.au/backend/property_handle.php:103
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/property_handle.php(103): PDO->exec('INSERT INTO `pr...')
+#1 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/property_handle.php on line 103
+[07-Dec-2018 08:38:17 UTC] PHP Notice:  Undefined variable: stmt in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:38:17 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php:263
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/dashboard.php(32): count_tem_in_table('product_categor...')
+#1 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:39:38 UTC] PHP Notice:  Undefined variable: stmt in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:39:38 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php:263
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/dashboard.php(32): count_tem_in_table('product_categor...')
+#1 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:39:43 UTC] PHP Notice:  Undefined variable: stmt in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:39:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php:263
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/dashboard.php(32): count_tem_in_table('product_categor...')
+#1 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:39:45 UTC] PHP Notice:  Undefined variable: stmt in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:39:45 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php:263
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/dashboard.php(32): count_tem_in_table('product_categor...')
+#1 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:39:45 UTC] PHP Notice:  Undefined variable: stmt in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:39:45 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php:263
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/dashboard.php(32): count_tem_in_table('product_categor...')
+#1 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:39:45 UTC] PHP Notice:  Undefined variable: stmt in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:39:45 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php:263
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/dashboard.php(32): count_tem_in_table('product_categor...')
+#1 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:40:19 UTC] PHP Notice:  Undefined variable: stmt in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:40:19 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php:263
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/dashboard.php(53): count_tem_in_table('products')
+#1 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:40:39 UTC] PHP Notice:  Undefined variable: stmt in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:40:39 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php:263
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/dashboard.php(53): count_tem_in_table('products')
+#1 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:41:14 UTC] PHP Notice:  Undefined variable: stmt in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:41:14 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php:263
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/dashboard.php(99): count_tem_in_table('your_story')
+#1 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:41:20 UTC] PHP Notice:  Undefined variable: stmt in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:41:20 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php:263
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/dashboard.php(99): count_tem_in_table('your_story')
+#1 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[14-Jan-2019 07:45:02 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'user_id' doesn't have a default value in /home/jjv0uek56hm7/public_html/backend/administrator/function.php:14
+Stack trace:
+#0 /home/jjv0uek56hm7/public_html/backend/administrator/function.php(14): PDO->exec('INSERT INTO `no...')
+#1 /home/jjv0uek56hm7/public_html/backend/delete_gallery.php(17): add_notification('A Gallery Categ...', 'admin')
+#2 {main}
+  thrown in /home/jjv0uek56hm7/public_html/backend/administrator/function.php on line 14
+[14-Jan-2019 07:45:04 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'user_id' doesn't have a default value in /home/jjv0uek56hm7/public_html/backend/administrator/function.php:14
+Stack trace:
+#0 /home/jjv0uek56hm7/public_html/backend/administrator/function.php(14): PDO->exec('INSERT INTO `no...')
+#1 /home/jjv0uek56hm7/public_html/backend/delete_gallery.php(17): add_notification('A Gallery Categ...', 'admin')
+#2 {main}
+  thrown in /home/jjv0uek56hm7/public_html/backend/administrator/function.php on line 14
+[14-Jan-2019 07:45:07 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'user_id' doesn't have a default value in /home/jjv0uek56hm7/public_html/backend/administrator/function.php:14
+Stack trace:
+#0 /home/jjv0uek56hm7/public_html/backend/administrator/function.php(14): PDO->exec('INSERT INTO `no...')
+#1 /home/jjv0uek56hm7/public_html/backend/delete_gallery.php(17): add_notification('A Gallery Categ...', 'admin')
+#2 {main}
+  thrown in /home/jjv0uek56hm7/public_html/backend/administrator/function.php on line 14
+[14-Jan-2019 07:45:08 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'user_id' doesn't have a default value in /home/jjv0uek56hm7/public_html/backend/administrator/function.php:14
+Stack trace:
+#0 /home/jjv0uek56hm7/public_html/backend/administrator/function.php(14): PDO->exec('INSERT INTO `no...')
+#1 /home/jjv0uek56hm7/public_html/backend/delete_gallery.php(17): add_notification('A Gallery Categ...', 'admin')
+#2 {main}
+  thrown in /home/jjv0uek56hm7/public_html/backend/administrator/function.php on line 14
+[14-Jan-2019 07:45:09 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'user_id' doesn't have a default value in /home/jjv0uek56hm7/public_html/backend/administrator/function.php:14
+Stack trace:
+#0 /home/jjv0uek56hm7/public_html/backend/administrator/function.php(14): PDO->exec('INSERT INTO `no...')
+#1 /home/jjv0uek56hm7/public_html/backend/delete_gallery.php(17): add_notification('A Gallery Categ...', 'admin')
+#2 {main}
+  thrown in /home/jjv0uek56hm7/public_html/backend/administrator/function.php on line 14
+[14-Jan-2019 07:45:10 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'user_id' doesn't have a default value in /home/jjv0uek56hm7/public_html/backend/administrator/function.php:14
+Stack trace:
+#0 /home/jjv0uek56hm7/public_html/backend/administrator/function.php(14): PDO->exec('INSERT INTO `no...')
+#1 /home/jjv0uek56hm7/public_html/backend/delete_gallery.php(17): add_notification('A Gallery Categ...', 'admin')
+#2 {main}
+  thrown in /home/jjv0uek56hm7/public_html/backend/administrator/function.php on line 14
+[28-Mar-2019 12:59:08 UTC] PHP Notice:  Undefined variable: user in /home/odfsmcj9lovi/public_html/www.galaxysynergy.com/galaxy/backend/pdo_class_data.php on line 30
+[28-Mar-2019 12:59:08 UTC] PHP Notice:  Undefined index: file in /home/odfsmcj9lovi/public_html/www.galaxysynergy.com/galaxy/backend/add_gallery_handle.php on line 12
+[28-Mar-2019 12:59:08 UTC] PHP Notice:  Undefined index: file in /home/odfsmcj9lovi/public_html/www.galaxysynergy.com/galaxy/backend/add_gallery_handle.php on line 23
+[28-Mar-2019 12:59:08 UTC] PHP Notice:  Undefined variable: user in /home/odfsmcj9lovi/public_html/www.galaxysynergy.com/galaxy/backend/pdo_class_data.php on line 30
+[28-Mar-2019 12:59:08 UTC] PHP Notice:  Undefined variable: stmt in /home/odfsmcj9lovi/public_html/www.galaxysynergy.com/galaxy/backend/administrator/function.php on line 297
+[28-Mar-2019 12:59:08 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/odfsmcj9lovi/public_html/www.galaxysynergy.com/galaxy/backend/administrator/function.php:297
+Stack trace:
+#0 /home/odfsmcj9lovi/public_html/www.galaxysynergy.com/galaxy/backend/includes/topbar.php(23): count_notification('notification', NULL)
+#1 /home/odfsmcj9lovi/public_html/www.galaxysynergy.com/galaxy/backend/includes/header_end.php(19): require('/home/odfsmcj9l...')
+#2 /home/odfsmcj9lovi/public_html/www.galaxysynergy.com/galaxy/backend/add_gallery.php(5): require('/home/odfsmcj9l...')
+#3 {main}
+  thrown in /home/odfsmcj9lovi/public_html/www.galaxysynergy.com/galaxy/backend/administrator/function.php on line 297
+[29-Mar-2019 06:28:13 UTC] PHP Warning:  getimagesize(sector//1553840893images (1).jpg): failed to open stream: No such file or directory in /home/odfsmcj9lovi/public_html/www.galaxysynergy.com/galaxy/backend/resize_image.php on line 30
+[29-Mar-2019 06:28:13 UTC] PHP Warning:  getimagesize(sector//1553840893images (1).jpg): failed to open stream: No such file or directory in /home/odfsmcj9lovi/public_html/www.galaxysynergy.com/galaxy/backend/resize_image.php on line 30
+[29-Mar-2019 06:28:33 UTC] PHP Warning:  getimagesize(sector//1553840913denissegeler_construction_1024-1024x683.jpg): failed to open stream: No such file or directory in /home/odfsmcj9lovi/public_html/www.galaxysynergy.com/galaxy/backend/resize_image.php on line 30
+[29-Mar-2019 06:28:33 UTC] PHP Warning:  getimagesize(sector//1553840913denissegeler_construction_1024-1024x683.jpg): failed to open stream: No such file or directory in /home/odfsmcj9lovi/public_html/www.galaxysynergy.com/galaxy/backend/resize_image.php on line 30
+[29-Mar-2019 06:32:56 UTC] PHP Warning:  getimagesize(sector//1553841176denissegeler_construction_1024-1024x683.jpg): failed to open stream: No such file or directory in /home/odfsmcj9lovi/public_html/www.galaxysynergy.com/galaxy/backend/resize_image.php on line 30
+[29-Mar-2019 06:32:56 UTC] PHP Warning:  getimagesize(sector//1553841176denissegeler_construction_1024-1024x683.jpg): failed to open stream: No such file or directory in /home/odfsmcj9lovi/public_html/www.galaxysynergy.com/galaxy/backend/resize_image.php on line 30
+[29-Mar-2019 06:34:16 UTC] PHP Warning:  getimagesize(sector//1553841256images.jpg): failed to open stream: No such file or directory in /home/odfsmcj9lovi/public_html/www.galaxysynergy.com/galaxy/backend/resize_image.php on line 30
+[29-Mar-2019 06:34:16 UTC] PHP Warning:  getimagesize(sector//1553841256images.jpg): failed to open stream: No such file or directory in /home/odfsmcj9lovi/public_html/www.galaxysynergy.com/galaxy/backend/resize_image.php on line 30
+[22-May-2019 10:27:08 UTC] PHP Notice:  Undefined variable: user in /home/odfsmcj9lovi/public_html/Nigrani/backend/pdo_class_data.php on line 30
+[22-May-2019 10:27:08 UTC] PHP Notice:  Undefined variable: stmt in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php on line 297
+[22-May-2019 10:27:08 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php:297
+Stack trace:
+#0 /home/odfsmcj9lovi/public_html/Nigrani/backend/includes/topbar.php(23): count_notification('notification', NULL)
+#1 /home/odfsmcj9lovi/public_html/Nigrani/backend/includes/header_end.php(19): require('/home/odfsmcj9l...')
+#2 /home/odfsmcj9lovi/public_html/Nigrani/backend/dashboard.php(3): require('/home/odfsmcj9l...')
+#3 {main}
+  thrown in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php on line 297
+[22-May-2019 10:28:00 UTC] PHP Notice:  Undefined variable: user in /home/odfsmcj9lovi/public_html/Nigrani/backend/pdo_class_data.php on line 30
+[22-May-2019 10:28:00 UTC] PHP Notice:  Undefined variable: stmt in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php on line 297
+[22-May-2019 10:28:00 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php:297
+Stack trace:
+#0 /home/odfsmcj9lovi/public_html/Nigrani/backend/includes/topbar.php(23): count_notification('notification', NULL)
+#1 /home/odfsmcj9lovi/public_html/Nigrani/backend/includes/header_end.php(19): require('/home/odfsmcj9l...')
+#2 /home/odfsmcj9lovi/public_html/Nigrani/backend/dashboard.php(3): require('/home/odfsmcj9l...')
+#3 {main}
+  thrown in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php on line 297
+[22-May-2019 10:28:23 UTC] PHP Notice:  Undefined variable: user in /home/odfsmcj9lovi/public_html/Nigrani/backend/pdo_class_data.php on line 30
+[22-May-2019 10:28:23 UTC] PHP Notice:  Undefined variable: stmt in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php on line 297
+[22-May-2019 10:28:23 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php:297
+Stack trace:
+#0 /home/odfsmcj9lovi/public_html/Nigrani/backend/includes/topbar.php(23): count_notification('notification', NULL)
+#1 /home/odfsmcj9lovi/public_html/Nigrani/backend/includes/header_end.php(19): require('/home/odfsmcj9l...')
+#2 /home/odfsmcj9lovi/public_html/Nigrani/backend/dashboard.php(3): require('/home/odfsmcj9l...')
+#3 {main}
+  thrown in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php on line 297
+[22-May-2019 10:38:17 UTC] PHP Notice:  Undefined variable: user in /home/odfsmcj9lovi/public_html/Nigrani/backend/pdo_class_data.php on line 30
+[22-May-2019 10:38:17 UTC] PHP Notice:  Undefined variable: stmt in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php on line 297
+[22-May-2019 10:38:17 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php:297
+Stack trace:
+#0 /home/odfsmcj9lovi/public_html/Nigrani/backend/includes/topbar.php(23): count_notification('notification', NULL)
+#1 /home/odfsmcj9lovi/public_html/Nigrani/backend/includes/header_end.php(19): require('/home/odfsmcj9l...')
+#2 /home/odfsmcj9lovi/public_html/Nigrani/backend/dashboard.php(3): require('/home/odfsmcj9l...')
+#3 {main}
+  thrown in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php on line 297
+[22-May-2019 11:29:14 UTC] PHP Notice:  Undefined variable: user in /home/odfsmcj9lovi/public_html/Nigrani/backend/pdo_class_data.php on line 30
+[22-May-2019 11:29:14 UTC] PHP Notice:  Undefined variable: stmt in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php on line 297
+[22-May-2019 11:29:14 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php:297
+Stack trace:
+#0 /home/odfsmcj9lovi/public_html/Nigrani/backend/includes/topbar.php(23): count_notification('notification', NULL)
+#1 /home/odfsmcj9lovi/public_html/Nigrani/backend/includes/header_end.php(19): require('/home/odfsmcj9l...')
+#2 /home/odfsmcj9lovi/public_html/Nigrani/backend/view_gallery.php(4): require('/home/odfsmcj9l...')
+#3 {main}
+  thrown in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php on line 297
+[22-May-2019 11:51:56 UTC] PHP Notice:  Undefined index: menu_name in /home/odfsmcj9lovi/public_html/Nigrani/backend/update_sector_handle.php on line 19
+[22-May-2019 15:11:42 UTC] PHP Notice:  Undefined variable: user in /home/odfsmcj9lovi/public_html/Nigrani/backend/pdo_class_data.php on line 30
+[22-May-2019 15:11:42 UTC] PHP Notice:  Undefined variable: stmt in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php on line 297
+[22-May-2019 15:11:42 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php:297
+Stack trace:
+#0 /home/odfsmcj9lovi/public_html/Nigrani/backend/includes/topbar.php(23): count_notification('notification', NULL)
+#1 /home/odfsmcj9lovi/public_html/Nigrani/backend/includes/header_end.php(19): require('/home/odfsmcj9l...')
+#2 /home/odfsmcj9lovi/public_html/Nigrani/backend/view_contact_data.php(4): require('/home/odfsmcj9l...')
+#3 {main}
+  thrown in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php on line 297
+[23-May-2019 03:26:07 UTC] PHP Notice:  Undefined variable: user in /home/odfsmcj9lovi/public_html/Nigrani/backend/pdo_class_data.php on line 30
+[23-May-2019 03:26:08 UTC] PHP Notice:  Undefined variable: stmt in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php on line 297
+[23-May-2019 03:26:08 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php:297
+Stack trace:
+#0 /home/odfsmcj9lovi/public_html/Nigrani/backend/includes/topbar.php(23): count_notification('notification', NULL)
+#1 /home/odfsmcj9lovi/public_html/Nigrani/backend/includes/header_end.php(19): require('/home/odfsmcj9l...')
+#2 /home/odfsmcj9lovi/public_html/Nigrani/backend/dashboard.php(3): require('/home/odfsmcj9l...')
+#3 {main}
+  thrown in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php on line 297
+[23-May-2019 05:27:26 UTC] PHP Notice:  Undefined index: menu_name in /home/odfsmcj9lovi/public_html/Nigrani/backend/update_sector_handle.php on line 19
+[23-May-2019 11:46:15 UTC] PHP Notice:  Undefined variable: user in /home/odfsmcj9lovi/public_html/Nigrani/backend/pdo_class_data.php on line 30
+[23-May-2019 11:46:15 UTC] PHP Notice:  Undefined variable: stmt in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php on line 297
+[23-May-2019 11:46:15 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php:297
+Stack trace:
+#0 /home/odfsmcj9lovi/public_html/Nigrani/backend/includes/topbar.php(23): count_notification('notification', NULL)
+#1 /home/odfsmcj9lovi/public_html/Nigrani/backend/includes/header_end.php(19): require('/home/odfsmcj9l...')
+#2 /home/odfsmcj9lovi/public_html/Nigrani/backend/update_sector.php(52): require('/home/odfsmcj9l...')
+#3 {main}
+  thrown in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php on line 297
+[23-May-2019 11:52:03 UTC] PHP Notice:  Undefined index: menu_name in /home/odfsmcj9lovi/public_html/Nigrani/backend/sector_handle.php on line 67
+[23-May-2019 12:06:01 UTC] PHP Notice:  Undefined index: menu_name in /home/odfsmcj9lovi/public_html/Nigrani/backend/update_sector_handle.php on line 19
+[24-May-2019 07:14:22 UTC] PHP Notice:  Undefined index: menu_name in /home/odfsmcj9lovi/public_html/Nigrani/backend/update_sector_handle.php on line 19
+[24-May-2019 10:43:07 UTC] PHP Notice:  Undefined variable: user in /home/odfsmcj9lovi/public_html/Nigrani/backend/pdo_class_data.php on line 30
+[24-May-2019 10:43:07 UTC] PHP Notice:  Undefined variable: stmt in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php on line 297
+[24-May-2019 10:43:07 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php:297
+Stack trace:
+#0 /home/odfsmcj9lovi/public_html/Nigrani/backend/includes/topbar.php(23): count_notification('notification', NULL)
+#1 /home/odfsmcj9lovi/public_html/Nigrani/backend/includes/header_end.php(19): require('/home/odfsmcj9l...')
+#2 /home/odfsmcj9lovi/public_html/Nigrani/backend/view_sector.php(4): require('/home/odfsmcj9l...')
+#3 {main}
+  thrown in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php on line 297
+[25-May-2019 06:51:09 UTC] PHP Notice:  Undefined variable: user in /home/odfsmcj9lovi/public_html/Nigrani/backend/pdo_class_data.php on line 30
+[25-May-2019 06:51:09 UTC] PHP Notice:  Undefined variable: stmt in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php on line 297
+[25-May-2019 06:51:09 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php:297
+Stack trace:
+#0 /home/odfsmcj9lovi/public_html/Nigrani/backend/includes/topbar.php(23): count_notification('notification', NULL)
+#1 /home/odfsmcj9lovi/public_html/Nigrani/backend/includes/header_end.php(19): require('/home/odfsmcj9l...')
+#2 /home/odfsmcj9lovi/public_html/Nigrani/backend/add_sectors.php(50): require('/home/odfsmcj9l...')
+#3 {main}
+  thrown in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php on line 297
+[25-May-2019 06:54:12 UTC] PHP Notice:  Undefined index: menu_name in /home/odfsmcj9lovi/public_html/Nigrani/backend/sector_handle.php on line 67
+[25-May-2019 09:08:10 UTC] PHP Notice:  Undefined variable: user in /home/odfsmcj9lovi/public_html/Nigrani/backend/pdo_class_data.php on line 30
+[25-May-2019 09:08:10 UTC] PHP Notice:  Undefined variable: stmt in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php on line 297
+[25-May-2019 09:08:10 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php:297
+Stack trace:
+#0 /home/odfsmcj9lovi/public_html/Nigrani/backend/includes/topbar.php(23): count_notification('notification', NULL)
+#1 /home/odfsmcj9lovi/public_html/Nigrani/backend/includes/header_end.php(19): require('/home/odfsmcj9l...')
+#2 /home/odfsmcj9lovi/public_html/Nigrani/backend/view_sector.php(4): require('/home/odfsmcj9l...')
+#3 {main}
+  thrown in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php on line 297
+[25-May-2019 13:24:54 UTC] PHP Notice:  Undefined variable: user in /home/odfsmcj9lovi/public_html/Nigrani/backend/pdo_class_data.php on line 30
+[25-May-2019 13:24:54 UTC] PHP Notice:  Undefined variable: stmt in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php on line 297
+[25-May-2019 13:24:54 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php:297
+Stack trace:
+#0 /home/odfsmcj9lovi/public_html/Nigrani/backend/includes/topbar.php(23): count_notification('notification', NULL)
+#1 /home/odfsmcj9lovi/public_html/Nigrani/backend/includes/header_end.php(19): require('/home/odfsmcj9l...')
+#2 /home/odfsmcj9lovi/public_html/Nigrani/backend/view_contact_data.php(4): require('/home/odfsmcj9l...')
+#3 {main}
+  thrown in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php on line 297
+[08-Jun-2019 10:56:40 UTC] PHP Notice:  Undefined variable: user in /home/odfsmcj9lovi/public_html/Nigrani/backend/pdo_class_data.php on line 30
+[08-Jun-2019 10:56:41 UTC] PHP Notice:  Undefined variable: user in /home/odfsmcj9lovi/public_html/Nigrani/backend/pdo_class_data.php on line 30
+[08-Jun-2019 10:56:41 UTC] PHP Notice:  Undefined variable: stmt in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php on line 297
+[08-Jun-2019 10:56:41 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php:297
+Stack trace:
+#0 /home/odfsmcj9lovi/public_html/Nigrani/backend/includes/topbar.php(23): count_notification('notification', NULL)
+#1 /home/odfsmcj9lovi/public_html/Nigrani/backend/includes/header_end.php(19): require('/home/odfsmcj9l...')
+#2 /home/odfsmcj9lovi/public_html/Nigrani/backend/view_contact_data.php(4): require('/home/odfsmcj9l...')
+#3 {main}
+  thrown in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php on line 297
+[08-Jun-2019 12:21:31 UTC] PHP Notice:  Undefined variable: user in /home/odfsmcj9lovi/public_html/Nigrani/backend/pdo_class_data.php on line 30
+[08-Jun-2019 12:21:31 UTC] PHP Notice:  Undefined variable: stmt in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php on line 297
+[08-Jun-2019 12:21:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php:297
+Stack trace:
+#0 /home/odfsmcj9lovi/public_html/Nigrani/backend/includes/topbar.php(23): count_notification('notification', NULL)
+#1 /home/odfsmcj9lovi/public_html/Nigrani/backend/includes/header_end.php(19): require('/home/odfsmcj9l...')
+#2 /home/odfsmcj9lovi/public_html/Nigrani/backend/dashboard.php(3): require('/home/odfsmcj9l...')
+#3 {main}
+  thrown in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php on line 297
+[08-Jun-2019 14:15:46 UTC] PHP Notice:  Undefined variable: user in /home/odfsmcj9lovi/public_html/Nigrani/backend/pdo_class_data.php on line 30
+[08-Jun-2019 14:15:46 UTC] PHP Notice:  Undefined variable: stmt in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php on line 297
+[08-Jun-2019 14:15:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php:297
+Stack trace:
+#0 /home/odfsmcj9lovi/public_html/Nigrani/backend/includes/topbar.php(23): count_notification('notification', NULL)
+#1 /home/odfsmcj9lovi/public_html/Nigrani/backend/includes/header_end.php(19): require('/home/odfsmcj9l...')
+#2 /home/odfsmcj9lovi/public_html/Nigrani/backend/dashboard.php(3): require('/home/odfsmcj9l...')
+#3 {main}
+  thrown in /home/odfsmcj9lovi/public_html/Nigrani/backend/administrator/function.php on line 297
+[13-Aug-2019 05:18:49 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/catpopsc/public_html/www.concart.in/concart/backend/administrator/function.php:297
+Stack trace:
+#0 /home/catpopsc/public_html/www.concart.in/concart/backend/includes/topbar.php(23): count_notification('notification', NULL)
+#1 /home/catpopsc/public_html/www.concart.in/concart/backend/includes/header_end.php(19): require('/home/catpopsc/...')
+#2 /home/catpopsc/public_html/www.concart.in/concart/backend/view_gallery.php(4): require('/home/catpopsc/...')
+#3 {main}
+  thrown in /home/catpopsc/public_html/www.concart.in/concart/backend/administrator/function.php on line 297
+[13-Aug-2019 07:29:52 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/catpopsc/public_html/www.concart.in/concart/backend/update_blog_handle.php:11) in /home/catpopsc/public_html/www.concart.in/concart/backend/update_blog_handle.php on line 27
