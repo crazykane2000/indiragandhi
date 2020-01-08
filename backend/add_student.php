@@ -66,7 +66,7 @@
             <div class="row">
                 <div class="col-xs-12">
                     <div class="page-title-box">
-                        <h4 class="page-title">Add Service</h4>
+                        <h4 class="page-title">Add Student / Accompanying Artist / Team Manager Here</h4>
                         <div class="clearfix" style="padding:10px;"></div>
                     </div>
                 </div>
@@ -80,7 +80,7 @@
                     <div class="card-box items">
                       
                       <div class="row">
-                        <div class="col-sm-3">
+                        <div class="col-sm-6" style="background-color: #ddf0ff;padding:10px;">
                           <div class="form-group">
                              <label>Select University</label>
                              <select class="form-control" name="university">
@@ -93,7 +93,20 @@
                              </select>
                            </div>
                         </div>
+
+                        <div class="col-sm-3" style="background-color: #e9e9ff;padding:10px;">
+                          <div class="form-group">
+                             <label>Type of User</label>
+                             <select class="form-control" name="type_user">
+                               <option>Student</option>
+                               <option>Accompanying Artist</option>
+                               <option>Team Manager</option>
+                             </select>
+                           </div>
+                        </div>
+
                       </div>
+                      <hr style="margin:40px 0px" />
 
                       <div class="row">
                         <div class="col-sm-3">
@@ -109,6 +122,20 @@
                              <input type="text" class="form-control" required name="father_name" placeholder="Father Name" style="padding: 10px;">
                            </div>
                         </div>
+
+                         <div class="col-sm-3">
+                            <div class="form-group">
+                             <label>Email Id</label>
+                             <input type="text" class="form-control" required name="email" placeholder="Email Address" style="padding: 10px;">
+                           </div>
+                        </div>
+
+                         <div class="col-sm-3">
+                            <div class="form-group">
+                             <label>Mobile Number</label>
+                             <input type="text" class="form-control" required name="mobile" placeholder="Mobile Number" style="padding: 10px;">
+                           </div>
+                        </div>
                       
                         <div class="col-sm-3">
                             <div class="form-group">
@@ -117,6 +144,18 @@
                              </div>
                         </div>
                       
+                      <div class="col-sm-3">
+                            <div class="form-group">
+                               <label>Select Gender</label>
+                              <select class="form-control" name="gender" required="">
+                               <option>Select Gender</option>
+                               <option>Male</option>
+                               <option>Female</option>
+                             </select>
+                             </div>
+                        </div>
+                      
+
                         <div class="col-sm-3">
                             <div class="form-group">
                                <label>College / Department / Institute</label>
@@ -125,6 +164,8 @@
                         </div>
                       </div>
                       
+
+                      <hr style="margin: 30px 0px;">
 
                         
                       <div class="row">
@@ -180,6 +221,7 @@
 
                         <div style="padding: 10px;"></div>
                        <button type="submit" id="oplo" class="btn btn-success btn-lg">Add Student</button>
+                       <div style="padding: 20px;"></div>
 
                    </div>
                 </div>

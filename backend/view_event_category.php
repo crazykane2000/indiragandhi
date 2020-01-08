@@ -15,14 +15,14 @@
             <div class="row">
                 <div class="col-xs-12">
                     <div class="page-title-box">
-                        <h4 class="page-title">View University </h4>
+                        <h4 class="page-title">View Blog Category</h4>
                         <ol class="breadcrumb p-0">
                            
                             <li>
                                 <a href="#"><?php echo $pdo_auth['name'];?></a>
                             </li>
                             <li class="active">
-                               View University 
+                               View Blog Category
                             </li>
                         </ol>
                         <div class="clearfix"></div>
@@ -34,17 +34,17 @@
             <?php  see_status2($_REQUEST); ?>
             <div class="row">               
 
+              
+
+
                 <div class="col-xl-12 col-xs-12">
                     <div class="card-box items">
                       <div style="padding: 10px;"></div>
-                       <h3 style="color: #333;text-align:left;font-size: 20px">University </h3>
-                         <table  style="color: #333;" class="table table-striped table-hover">
+                          <table  style="color: #333;" class="table table-striped table-hover">
                           <thead>
                              <tr>
                                <th>S.No</th>
-                               <th>Univ. Name</th>
-                               <th>Mobile </th>
-                               <th>Password </th>
+                               <th>Blog Category</th>
                                <th>Date </th>
                                <th>Action</th>                              
                              </tr>
@@ -52,7 +52,7 @@
                           <tbody>
                             <?php 
                             try {
-                                  $stmt = $pdo->prepare('SELECT * FROM `university` ORDER BY date DESC');
+                                  $stmt = $pdo->prepare('SELECT * FROM `event_category`   ORDER BY date DESC');
                               } catch(PDOException $ex) {
                                   echo "An Error occured!"; 
                                   print_r($ex->getMessage());
@@ -63,13 +63,11 @@
                               foreach($user as $key=>$value){                                 
                                 echo '<tr>
                                     <td>'.$i.'</td>
-                                    <td><b>'.$value['univ_name'].'</b><br/>
-                                      <span style="font-size:12px;">'.$value['univ_location'].'</span>
-                                    </td>
-                                    <td>'.$value['mobile'].'</td>      
-                                    <td>'.$value['pass'].'</td>      
+                                    <td><label class="label label-primary">'.$value['category'].'</label></td>                                   
                                     <td>'.$value['date'].'</td>      
-                                    <th><a href="delete_university.php?id='.$value['id'].'" onclick="return confirm(\' Are you Sure you need to Delete this?  \');"><button class="btn btn-danger btn-sm">Delete</button></a> 
+                                    <th><a href="delete_blog_category.php?id='.$value['id'].'"><button class="btn btn-danger btn-sm">Delete</button></a> 
+                                         
+                                        </th>                        
                                   </tr>';
                                   $i++;
                             }           
@@ -77,14 +75,26 @@
                         </tbody>
                       </table>
                     </div>
-                </div>                
+                </div><!-- end col-->
+
+                
             </div>
-        </div> <!-- container -->
+           
+
+        </div> <!-- container -- <a href="update_blog_category.php?id='.$value['id'].'"><button class="btn btn-info btn-sm">Update</button></a> >
 
     </div> <!-- content -->
 
 
 </div>
+<!-- End content-page -->
+
+
+<!-- ============================================================== -->
+<!-- End Right content here -->
+<!-- ============================================================== -->
+
+
 <?php require 'includes/footer_start.php' ?>
 
   <script type="text/javascript" src="match.js"></script>

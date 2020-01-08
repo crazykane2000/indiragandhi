@@ -42,11 +42,7 @@
                           <thead>
                              <tr>
                                <th>S.No</th>
-                               <th>Univ. Name</th>
-                               <th>Mobile </th>
-                               <th>Password </th>
-                               <th>Date </th>
-                               <th>Action</th>                              
+                               <th>Univ. Name</th>                          
                              </tr>
                           </thead>
                           <tbody>
@@ -63,13 +59,8 @@
                               foreach($user as $key=>$value){                                 
                                 echo '<tr>
                                     <td>'.$i.'</td>
-                                    <td><b>'.$value['univ_name'].'</b><br/>
-                                      <span style="font-size:12px;">'.$value['univ_location'].'</span>
-                                    </td>
-                                    <td>'.$value['mobile'].'</td>      
-                                    <td>'.$value['pass'].'</td>      
-                                    <td>'.$value['date'].'</td>      
-                                    <th><a href="delete_university.php?id='.$value['id'].'" onclick="return confirm(\' Are you Sure you need to Delete this?  \');"><button class="btn btn-danger btn-sm">Delete</button></a> 
+                                    <td><b>'.$value['univ_name'].'</b>, <span style="font-size:12px;">'.$value['univ_location'].'</span></td>
+                                   
                                   </tr>';
                                   $i++;
                             }           

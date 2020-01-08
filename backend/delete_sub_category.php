@@ -5,7 +5,7 @@
     $pdo_auth = authenticate();
     $pdo = new PDO($dsn, $user, $pass, $opt);  
 
-   $table = "event_category";
+   $table = "event_sub_category";
    $id= $_REQUEST['id'];
    try {
     $stmt = $pdo->prepare('DELETE FROM  '.$table.'  WHERE id = :id');
@@ -15,5 +15,5 @@
     }
    $stmt->execute(['id' => $id]);
    //add_notification("A Blog Category has been Deleted", "admin");
-   header('Location:view_event_category.php?choice=success&value=Selected event has been Deleted Successfully');     
+   header('Location:view_event_sub_category.php?choice=success&value=Selected event Sub Category has been Deleted Successfully');     
 ?>

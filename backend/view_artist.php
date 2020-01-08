@@ -15,14 +15,14 @@
             <div class="row">
                 <div class="col-xs-12">
                     <div class="page-title-box">
-                        <h4 class="page-title">View University </h4>
+                        <h4 class="page-title">View Accompanying Artist </h4>
                         <ol class="breadcrumb p-0">
                            
                             <li>
-                                <a href="#"><?php echo $pdo_auth['name'];?></a>
+                                <a href="#"><?php echo $pdo_auth['name']; ?></a>
                             </li>
                             <li class="active">
-                               View University 
+                               View Career 
                             </li>
                         </ol>
                         <div class="clearfix"></div>
@@ -32,27 +32,28 @@
            
 
             <?php  see_status2($_REQUEST); ?>
-            <div class="row">               
-
+            <div class="row">   
                 <div class="col-xl-12 col-xs-12">
                     <div class="card-box items">
                       <div style="padding: 10px;"></div>
-                       <h3 style="color: #333;text-align:left;font-size: 20px">University </h3>
+                       <h3 style="color: #333;text-align:left;font-size: 20px">Accompanying Artists </h3>
                          <table  style="color: #333;" class="table table-striped table-hover">
                           <thead>
                              <tr>
                                <th>S.No</th>
-                               <th>Univ. Name</th>
-                               <th>Mobile </th>
-                               <th>Password </th>
-                               <th>Date </th>
+                               <th>Photo</th>
+                               <th>Accompanying Artist</th>
+                               <th>Reg. Date</th>
+                               <th>Contact </th>
+                               <th>College/Dept. </th>
+                               <th>No. Parti </th>
                                <th>Action</th>                              
                              </tr>
                           </thead>
                           <tbody>
                             <?php 
                             try {
-                                  $stmt = $pdo->prepare('SELECT * FROM `university` ORDER BY date DESC');
+                                  $stmt = $pdo->prepare('SELECT * FROM `student` WHERE `type_user`="Accompanying Artist" ORDER BY date DESC');
                               } catch(PDOException $ex) {
                                   echo "An Error occured!"; 
                                   print_r($ex->getMessage());
@@ -63,13 +64,25 @@
                               foreach($user as $key=>$value){                                 
                                 echo '<tr>
                                     <td>'.$i.'</td>
-                                    <td><b>'.$value['univ_name'].'</b><br/>
-                                      <span style="font-size:12px;">'.$value['univ_location'].'</span>
-                                    </td>
-                                    <td>'.$value['mobile'].'</td>      
-                                    <td>'.$value['pass'].'</td>      
-                                    <td>'.$value['date'].'</td>      
-                                    <th><a href="delete_university.php?id='.$value['id'].'" onclick="return confirm(\' Are you Sure you need to Delete this?  \');"><button class="btn btn-danger btn-sm">Delete</button></a> 
+                                    <td><img src="photo/'.$value['photo'].'" style="width:40px;" /></td>
+                                   <td style="background-color:#ecf9ff;border-bottom:solid 1px #fff;"><b>'.$value['student_name'].'</b><br/>
+                                      <span>'.$value['university'].'</span>
+                                   </td>
+                                    <td>'.$value['date'].'</td>    
+                                    <td><b>Mob : </b>'.$value['mobile'].'<br/><b>Email : </b>'.$value['email'].'</td>      
+                                    <td>'.$value['college_dept'].'</td>  
+                                    <td>'.$value['no_of_time_participated'].'</td>      
+                                    <td>
+                                        <div class="btn-group mr-1 mt-1">
+                                            <button type="button" class="btn btn-primary btn-sm dropdown-toggle waves-effect waves-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Action <i class="mdi mdi-chevron-down"></i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" onclick="return confirm(\' Are You Sure You Want to Delete This Student \')" href="delete_student.php?id='.$value['id'].'">Delete</a>
+                                                <a class="dropdown-item" target="_blank" href="view_artist_details.php?id='.$value['id'].'">View Details</a>
+                                            </div>
+                                        </div>
+                                     </td>                        
                                   </tr>';
                                   $i++;
                             }           
@@ -77,14 +90,26 @@
                         </tbody>
                       </table>
                     </div>
-                </div>                
+                </div><!-- end col-->
+
+                
             </div>
+           
+
         </div> <!-- container -->
 
     </div> <!-- content -->
 
 
 </div>
+<!-- End content-page -->
+
+
+<!-- ============================================================== -->
+<!-- End Right content here -->
+<!-- ============================================================== -->
+
+
 <?php require 'includes/footer_start.php' ?>
 
   <script type="text/javascript" src="match.js"></script>

@@ -32,32 +32,28 @@
            
 
             <?php  see_status2($_REQUEST); ?>
-            <div class="row">               
-
-              
-
-
+            <div class="row">   
                 <div class="col-xl-12 col-xs-12">
                     <div class="card-box items">
                       <div style="padding: 10px;"></div>
-                       <h3 style="color: #333;text-align:left;font-size: 20px">Careers </h3>
+                       <h3 style="color: #333;text-align:left;font-size: 20px">Students </h3>
                          <table  style="color: #333;" class="table table-striped table-hover">
                           <thead>
                              <tr>
                                <th>S.No</th>
-                               <th>Student</th>
-                               <th>Father </th>
-                               <th>DOB </th>
-                               <th>Address </th>
-                               <th>College/Dept </th>
+                               <th>Photo</th>
+                               <th>Accompanying Artist</th>
+                               <th>Reg. Date</th>
+                               <th>Contact </th>
+                               <th>College/Dept. </th>
                                <th>No. Parti </th>
-                               <th>Action</th>                              
+                               <th>Action</th>                                
                              </tr>
                           </thead>
                           <tbody>
                             <?php 
                             try {
-                                  $stmt = $pdo->prepare('SELECT * FROM `student`   ORDER BY date DESC');
+                                  $stmt = $pdo->prepare('SELECT * FROM `student` WHERE `type_user`="Student" ORDER BY date DESC');
                               } catch(PDOException $ex) {
                                   echo "An Error occured!"; 
                                   print_r($ex->getMessage());
@@ -68,15 +64,25 @@
                               foreach($user as $key=>$value){                                 
                                 echo '<tr>
                                     <td>'.$i.'</td>
-                                   <td><b>'.$value['student_name'].'</b><br/>
+                                    <td><img src="photo/'.$value['photo'].'" style="width:40px;" /></td>
+                                   <td style="background-color:#ecf9ff;border-bottom:solid 1px #fff;"><b>'.$value['student_name'].'</b><br/>
                                       <span>'.$value['university'].'</span>
                                    </td>
-                                    <td>'.$value['father_name'].'</td>                                   
-                                    <td>'.$value['dob'].'</td>    
-                                    <td>'.$value['address'].'</td>      
+                                    <td>'.$value['date'].'</td>    
+                                    <td><b>Mob : </b>'.$value['mobile'].'<br/><b>Email : </b>'.$value['email'].'</td>      
                                     <td>'.$value['college_dept'].'</td>  
                                     <td>'.$value['no_of_time_participated'].'</td>      
-                                    <th><a href="delete_student.php?id='.$value['id'].'"><button class="btn btn-danger btn-sm">Delete</button></a>  </th>                        
+                                    <td>
+                                        <div class="btn-group mr-1 mt-1">
+                                            <button type="button" class="btn btn-primary btn-sm dropdown-toggle waves-effect waves-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Action <i class="mdi mdi-chevron-down"></i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" onclick="return confirm(\' Are You Sure You Want to Delete This Student \')" href="delete_student.php?id='.$value['id'].'">Delete</a>
+                                                <a class="dropdown-item" target="_blank" href="view_student_details.php?id='.$value['id'].'">View Details</a>
+                                            </div>
+                                        </div>
+                                     </td>                        
                                   </tr>';
                                   $i++;
                             }           

@@ -91,7 +91,7 @@
 
                        <div class="form-group">
                          <label>Password</label>
-                         <input type="text" class="form-control" required name="pass" placeholder="Enter password" style="padding: 10px;">
+                         <input type="text" class="form-control" value="<?php echo uniqid(); ?>" required name="pass" placeholder="Enter password" style="padding: 10px;">
                        </div>
                      
                       <hr/>

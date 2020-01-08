@@ -20,36 +20,36 @@
             <?php  see_status2($_REQUEST); ?>            
               <div class="col-sm-12">
                     <div class="card-box">
-                      <div id="morris-bar-stacked" style="height: 290px;"></div>
+                      <div id="morris-bar-stacked" style="height: 320px;"></div>
                     </div>
               </div>
-             <!--div class="row">
+             <div class="row">
                   <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3">
-                     <a href="view_property_category.php">
+                     <a href="view_university.php">
                         <div class="card-box tilebox-one">
                           <i class="icon-layers pull-xs-right text-muted"></i>
-                          <h6 class="text-muted text-uppercase m-b-20">Total Property Category</h6>
-                          <h2 class="m-b-20" data-plugin="counterup"><?php  echo $count = count_tem_in_table("property_category"); ?></h2>
+                          <h6 class="text-muted text-uppercase m-b-20">Total Universities</h6>
+                          <h2 class="m-b-20" data-plugin="counterup"><?php  echo $count = count_tem_in_table("university"); ?></h2>
                           <span class="label label-success"> <?php echo $pdo_auth['name']; ?> </span> <span class="text-muted">Click to View</span>
                       </div>
                      </a>
                   </div>                 
 
                   <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3">
-                      <a href="view_contact_data.php">
+                      <a href="view_sstudent.php">
                         <div class="card-box tilebox-one">
                             <i class="icon-rocket pull-xs-right text-muted"></i>
-                            <h6 class="text-muted text-uppercase m-b-20">Total Contacts</h6>
+                            <h6 class="text-muted text-uppercase m-b-20">Total Students</h6>
                             <h2 class="m-b-20" data-plugin="counterup"><?php  echo $count = count_tem_in_table("contact_data"); ?></h2>                                     
                             <span class="label label-warning"> All Time </span> <span class="text-muted">From Begining of time</span>
                         </div>
                       </a>
                   </div>
                    <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3">
-                     <a href="view_property.php">
+                     <a href="view_artist.php">
                         <div class="card-box tilebox-one">
                           <i class="icon-layers pull-xs-right text-muted"></i>
-                          <h6 class="text-muted text-uppercase m-b-20">Properties Available</h6>
+                          <h6 class="text-muted text-uppercase m-b-20">Total Artist</h6>
                           <h2 class="m-b-20" data-plugin="counterup"><?php  echo $count = count_tem_in_table("property"); ?></h2>
                           <span class="label label-success"> <?php echo $pdo_auth['name']; ?> </span> <span class="text-muted">Click to View</span>
                       </div>
@@ -57,43 +57,19 @@
                   </div>                 
 
                   <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3">
-                      <a href="view_testimonials.php">
+                      <a href="view_support.php">
                         <div class="card-box tilebox-one">
                             <i class="icon-rocket pull-xs-right text-muted"></i>
-                            <h6 class="text-muted text-uppercase m-b-20">Testimonials</h6>
+                            <h6 class="text-muted text-uppercase m-b-20">Total Support</h6>
                             <h2 class="m-b-20" data-plugin="counterup"><?php  echo $count = count_tem_in_table("testimonials"); ?></h2>                                     
                             <span class="label label-warning"> All Time </span> <span class="text-muted">From Begining of time</span>
                         </div>
                       </a>
                   </div>
 
-                   <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3">
-                     <a href="view_video.php">
-                        <div class="card-box tilebox-one">
-                          <i class="icon-layers pull-xs-right text-muted"></i>
-                          <h6 class="text-muted text-uppercase m-b-20">Total Video Post</h6>
-                          <h2 class="m-b-20" data-plugin="counterup"><?php  echo $count = count_tem_in_table("video"); ?></h2>
-                          <span class="label label-success"> <?php echo $pdo_auth['name']; ?> </span> <span class="text-muted">Click to View</span>
-                      </div>
-                     </a>
-                  </div>                 
+                  
 
-               
-
-                   <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3">
-                     <a href="view_gallery_category.php">
-                        <div class="card-box tilebox-one">
-                          <i class="icon-layers pull-xs-right text-muted"></i>
-                          <h6 class="text-muted text-uppercase m-b-20">Total Gallery Category</h6>
-                          <h2 class="m-b-20" data-plugin="counterup"><?php  echo $count = count_tem_in_table("category"); ?></h2>
-                          <span class="label label-success"> <?php echo $pdo_auth['name']; ?> </span> <span class="text-muted">Click to View</span>
-                      </div>
-                     </a>
-                  </div>                 
-
-                 
-
-              </div-->
+              </div>
             
            
 

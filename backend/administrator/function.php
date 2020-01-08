@@ -14,18 +14,18 @@ function add_notification($notification, $for){
         $result = $pdo->exec("INSERT INTO `$table` ($key_list) VALUES ($value_list)");
     }
 
-    function file_validate($file){
-      $target_dir = "uploads/";
-      
-      
-      $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+    function file_validate($dir,$file,$timestamp){
+      $target_dir = "$dir/";  
+      $filess = $timestamp.basename($file["name"]);    
+      $target_file = $target_dir .$filess;
       $uploadOk = 1;
       $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+      $reason = "";
       // Check if image file is a actual image or fake image
       if(isset($_POST["submit"])) {
-          $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+          $check = getimagesize($file["tmp_name"]);
           if($check !== false) {
-              echo "File is an image - " . $check["mime"] . ".";
+              //echo "File is an image - " . $check["mime"] . ".";
               $uploadOk = 1;
           } else {
               echo "File is not an image.";
@@ -34,29 +34,27 @@ function add_notification($notification, $for){
       }
       // Check if file already exists
       if (file_exists($target_file)) {
-          echo "Sorry, file already exists.";
+          $reason = "Sorry, file already exists.";
           $uploadOk = 0;
       }
       // Check file size
-      if ($_FILES["fileToUpload"]["size"] > 500000) {
-          echo "Sorry, your file is too large.";
+      if ($file["size"] > 100000) {
+          $reason = "Sorry, your file is too large.";
           $uploadOk = 0;
       }
       // Allow certain file formats
       if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
       && $imageFileType != "gif" ) {
-          echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+          $reason = "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
           $uploadOk = 0;
       }
-      // Check if $uploadOk is set to 0 by an error
-      if ($uploadOk == 0) {
-          echo "Sorry, your file was not uploaded.";
-      // if everything is ok, try to upload file
+     if ($uploadOk == 0) {
+          return 0;
       } else {
-          if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-              echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+          if (move_uploaded_file($file["tmp_name"], $target_file)) {
+              return 1;
           } else {
-              echo "Sorry, there was an error uploading your file.";
+              return 0;
           }
       }
     }
@@ -96,6 +94,27 @@ function add_notification($notification, $for){
                          
       try {
           $stmt = $pdo->prepare('SELECT * FROM `'.$table.'` WHERE `'.$col.'`="'.$value.'"  ORDER BY date DESC ');
+      } catch(PDOException $ex) {
+          echo "An Error occured!"; 
+          print_r($ex->getMessage());
+      }
+      $stmt->execute();
+      $user = $stmt->rowCount();
+      return $user;
+    }
+
+    function get_count_items_special($table, $col, $value, $univ){
+       include 'connection.php';
+        $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+        $opt = [
+            PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+            PDO::ATTR_EMULATE_PREPARES   => false,
+        ];
+        $pdo = new PDO($dsn, $user, $pass, $opt);        
+                         
+      try {
+          $stmt = $pdo->prepare('SELECT * FROM `'.$table.'` WHERE `'.$col.'`="'.$value.'" AND  `university`="'.$univ.'" ORDER BY date DESC ');
       } catch(PDOException $ex) {
           echo "An Error occured!"; 
           print_r($ex->getMessage());

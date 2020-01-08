@@ -43,14 +43,17 @@
                              <tr>
                                <th>S.No</th>
                                <th>Univ. Name</th>
-                               <th>Mobile </th>
-                               <th>Password </th>
-                               <th>Date </th>
-                               <th>Action</th>                              
+                                <th>Student </th>
+                               <th>Accompanist </th>
+                               <th>Team Manager </th>                      
                              </tr>
                           </thead>
                           <tbody>
                             <?php 
+                            $students = 0;
+                            $accompanist = 0;
+                            $team_manager = 0;
+
                             try {
                                   $stmt = $pdo->prepare('SELECT * FROM `university` ORDER BY date DESC');
                               } catch(PDOException $ex) {
@@ -60,16 +63,18 @@
                               $stmt->execute();
                               $user = $stmt->fetchAll();   
                               $i=1; 
-                              foreach($user as $key=>$value){                                 
+                              foreach($user as $key=>$value){      
+                              $student = get_count_items_special("student", "type_user","student", $value['univ_name'] ); 
+                              $accompanist = get_count_items_special("student", "type_user","Accompanying Artist", $value['univ_name'] ); 
+                              $team_manager = get_count_items_special("student", "type_user","Team Manager", $value['univ_name'] ); 
+                              
+                                //print_r($student)                        ;
                                 echo '<tr>
                                     <td>'.$i.'</td>
-                                    <td><b>'.$value['univ_name'].'</b><br/>
-                                      <span style="font-size:12px;">'.$value['univ_location'].'</span>
-                                    </td>
-                                    <td>'.$value['mobile'].'</td>      
-                                    <td>'.$value['pass'].'</td>      
-                                    <td>'.$value['date'].'</td>      
-                                    <th><a href="delete_university.php?id='.$value['id'].'" onclick="return confirm(\' Are you Sure you need to Delete this?  \');"><button class="btn btn-danger btn-sm">Delete</button></a> 
+                                    <td><b>'.$value['univ_name'].'</b><br/><span style="font-size:12px;">'.$value['univ_location'].'</span></td>
+                                    <td><a style="color:#333;text-decoration:underline" href="view_ppl_reported.php?university='.$value['univ_name'].'&type_user=Student">'.$student.'</a></td>      
+                                    <td><a style="color:#333;text-decoration:underline" href="view_ppl_reported.php?university='.$value['univ_name'].'&type_user=Accompanying Artist">'.$accompanist.'</a></td>      
+                                    <td><a style="color:#333;text-decoration:underline" href="view_ppl_reported.php?university='.$value['univ_name'].'&type_user=Team Manager">'.$team_manager.'</a></td>  
                                   </tr>';
                                   $i++;
                             }           
